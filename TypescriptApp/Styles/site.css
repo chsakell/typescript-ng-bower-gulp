@@ -1,0 +1,25 @@
+﻿body {
+    padding-bottom: 70px;
+    background-color: #F9F9F9;
+}
+
+footer {
+    background-color: #F8F8F8;
+}
+
+.navbar img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+.gravatar {
+    float: left;
+    width: 20px;
+    margin: 0 2px;
+}
+
+.royalblue {
+    color: royalblue;
+    font-family: Arial, serif;
+}

@@ -1,0 +1,67 @@
+﻿<br /><hr />
+<div class="row">
+    <!-- edit form column -->
+    <div class="alert alert-danger alert-dismissable">
+        <a class="panel-close close" data-dismiss="alert">×</a>
+        <i class="fa fa-pencil-square-o"></i>
+        Add <strong>{{vm.post.Title}}</strong> post
+    </div>
+    <form class="form" role="form" ng-submit="vm.add();">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <label class="control-label">Title</label>
+                    <input class="form-control" name="title" type="text" ng-model="vm.post.Title" required>
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+                    <label class="control-label">URI</label>
+                    <input class="form-control" type="text" ng-model="vm.post.URI" name="URI" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+
+                <div class="col-sm-6 col-xs-12">
+                    <label class="control-label">Author</label>
+                    <input class="form-control" type="text" ng-model="vm.post.Author" name="author" required>
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+                    <label class="control-label">Gravatar</label>
+                    <input class="form-control" type="text" ng-model="vm.post.AuthorGravatar" name="AuthorGravatar" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <label class="control-label">Date published</label>
+                    <input class="form-control" type="text" placeholder="yy-mm--dd" ng-model="vm.post.DatePublished" name="DatePublished" required>
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+                    <label class="control-label">Image</label>
+                    <input class="form-control" type="text" ng-model="vm.post.ImageURI" name="ImageURI" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Contents</label>
+            <textarea class="form-control" ng-model="vm.post.Contents" name="Contents" rows="3" required />
+        </div>
+
+        <div class="form-group col-md-4">
+            <label class="control-label"></label>
+            <div class="">
+                <input type="submit" class="btn btn-primary" value="Add Post" />
+                <span></span>
+                <a class="btn btn-default" ng-href="#/">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
